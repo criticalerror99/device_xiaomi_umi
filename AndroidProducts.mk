@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/p404_umi.mk
+    $(LOCAL_DIR)/exui_umi.mk
 
 COMMON_LUNCH_CHOICES := \
-    p404_umi-user \
-    p404_umi-userdebug \
-    p404_umi-eng
+    exui_umi-user \
+    exui_umi-userdebug \
+    exui_umi-eng

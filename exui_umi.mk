@@ -22,14 +22,11 @@ TARGET_GAPPS_ARCH := arm64
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/umi/kona.mk)
 
-# Inherit common 404 configuration
-$(call inherit-product, vendor/404/configs/common.mk)
-
-$(call inherit-product, vendor/google/pixel/config.mk)
-$(call inherit-product, vendor/google/gms/config.mk)
+# Inherit common Extended-UI configuration
+$(call inherit-product, vendor/exui/config/common.mk)
 
 # Override build properties
-PRODUCT_NAME := p404_umi
+PRODUCT_NAME := exui_umi
 PRODUCT_DEVICE := umi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 10
