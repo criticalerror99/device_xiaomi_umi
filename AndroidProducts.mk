@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/exui_umi.mk
+    $(LOCAL_DIR)/ssos_umi.mk
 
 COMMON_LUNCH_CHOICES := \
-    exui_umi-user \
-    exui_umi-userdebug \
-    exui_umi-eng
+    ssos_umi-user \
+    ssos_umi-userdebug \
+    ssos_umi-eng
