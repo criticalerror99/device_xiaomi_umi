@@ -1,0 +1,2 @@
+allow bluetooth vendor_default_prop:property_service { set };
+allow bluetooth incremental_prop:file { read open };
