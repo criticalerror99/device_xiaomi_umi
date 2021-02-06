@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 
-# Include 404 common configuration
 TARGET_BOOT_ANIMATION_RES := 1080
 
 TARGET_GAPPS_ARCH := arm64
@@ -22,21 +21,15 @@ TARGET_GAPPS_ARCH := arm64
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/umi/kona.mk)
 
-# Inherit common Extended-UI configuration
-$(call inherit-product, vendor/ssos/config/common.mk)
-
-# ShapeShift specific properties
-PRODUCT_PRODUCT_PROPERTIES += \
-  ro.ssos.cpu=SD865
+# Inherit common DotOS configuration
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Override build properties
-PRODUCT_NAME := ssos_umi
+PRODUCT_NAME := dot_umi
 PRODUCT_DEVICE := umi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 10
 PRODUCT_MANUFACTURER := Xiaomi
-
-SSOS_BUILD_TYPE := OFFICIAL
 
 BUILD_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
 

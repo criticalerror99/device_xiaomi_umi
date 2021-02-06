@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ssos_umi.mk
+    $(LOCAL_DIR)/dot_umi.mk
 
 COMMON_LUNCH_CHOICES := \
-    ssos_umi-user \
-    ssos_umi-userdebug \
-    ssos_umi-eng
+    dot_umi-user \
+    dot_umi-userdebug \
+    dot_umi-eng
