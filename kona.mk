@@ -36,6 +36,13 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
 # Inherit proprietary targets
 $(call inherit-product-if-exists, vendor/xiaomi/umi/umi-vendor.mk)
 
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-parts.xml
+
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Shipping API level
